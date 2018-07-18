@@ -1,0 +1,15 @@
+<h1>Hello! I'm blog</h1>
+<%= @test %>
+
+
+<%= form_tag blog_path do %>
+	<div>
+		<%= text_field_tag :title %>
+	</div>
+
+	<div>
+		<%= text_area_tag :body %>
+	</div>
+
+	<%= submit_tag "Create Post" %>
+<% end %>
